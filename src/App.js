@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Helmet } from "react";
+import { Helmet } from "react-helmet";
 //import { Links, Route, BrowserRoutes } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
