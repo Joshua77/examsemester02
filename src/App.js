@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import PageNotFound from "./pages/Page404";
-import UserInput from "./pages/userinput";
+
 //import { ErrorBoundary } from "react-error-boundary";
 
 //import Reducer from "./Components/usereducer.js";
@@ -95,7 +95,6 @@ export default function App() {
 
   return (
     <div className="app">
-      <UserInput />
       <BrowserRouter>
         <Route>
           <Helmet>

@@ -1,9 +1,6 @@
 import React, { useReducer } from "react";
 import "../App.css";
 
-
-
-//If this do not run refer back to the old method the guy first used in the video
 const ACTIONS = {
   INCREMENT: "incrementCount",
   DECREMENT: "decrementCount",
@@ -25,6 +22,7 @@ function reducer(state, action) {
   }
 }
 
+
 export default function Reduce() {
   const [state, dispatch] = useReducer(reducer, { count: 0 });
   function incrementCount() {
@@ -43,10 +41,9 @@ export default function Reduce() {
     dispatch({ type: ACTIONS.SET });
   }
 
-    const handleChange = (event) => {
-    setCount(parseInt(event.target.value))
-    console.log("value is:", event.target.value);
-  };
+  const handleChange = (e) => {
+  dispatch({ type: "SET", payload: parseInt(e.target.value) })}
+  
 
   return (
     <div className="app">
@@ -59,7 +56,7 @@ export default function Reduce() {
                 id="message"
                 name="message"
                 //onChange={handleChange}
-                onChange ={(e) => dispatch ({type: "SET", payload:parseInt(e.target.value)})}
+                onChange ={handleChange}
                 value={state.count}
               />
 
