@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+
 //import { ErrorBoundary } from "react-error-boundary";
 //import { useErrorHandler } from "react-error-boundary";
 //import  ErrorPage  from '../Components/Errorpage'
@@ -15,16 +16,14 @@ function Home() {
     setCount(count - 1);
   };
 
-  
-
   return (
     <>
-      <h2>Test this Page for SEO and UseEffect Counter </h2>
+      <h2>Test this Page for UseEffect Counter </h2>
       <div className="app">
+     
+        
         <div className="page-design">
-            
           <div class="count-card">
-            
             <h2>Count (UseEffect):</h2>
             <h3>{count}</h3>
             <div class="buttons">

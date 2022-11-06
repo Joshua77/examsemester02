@@ -15,7 +15,10 @@ function Navbar() {
             <Link to="/Reducer"> Use Reducer </Link>
           </li>
           <li>
-            <Link to="/Reducer"> Use Reducer </Link>
+            <Link to="/seo"> SEO </Link>
+          </li>
+          <li>
+            <Link to="/boundary"> Error Boundary </Link>
           </li>
         </ul>
       </nav>
