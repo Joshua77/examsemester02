@@ -1,18 +1,27 @@
 //import React from "react";
 
-import React from 'react';
+import React from "react";
+import "../App.css";
+
 
 const MyCounter = ({ count, setCount }) => {
   if (count === 5) {
-    throw new Error('Count is 5. Error Occurred.');
+    throw new Error("Count is 5. Error Occurred.");
   }
 
   return (
-    <div>
-      <div>{count}</div>
-      <p>Increase till 5 to throw Error </p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-      <button onClick={() => setCount(count - 1)}>Decrement</button>
+    <div className="app">
+      <div className="page-design">
+        <div className="count-card">
+          <h3>Increase till 5 to throw Error </h3>
+          <br></br>
+          <h4>{count}</h4>
+          <br></br>
+          <button className = 'button-3' onClick={() => setCount(count + 1)}>Increment</button>
+          <button className = 'button-2' onClick={() => setCount(count - 1)}>Decrement</button>
+          <button className = 'button-1' onClick={() => setCount(0)}>Reset</button>
+        </div>
+      </div>
     </div>
   );
 };

@@ -27,12 +27,31 @@
   box-shadow: 0px 13px 35px -15px var(--grayish-blue);
 }
 
+.count-card-seo {
+  height: 222px;
+  max-width: 85%;
+  width: 1000px;
+  padding: 30px 27px;
+  background-color: white;
+  margin-top: 90px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  box-shadow: 0px 13px 35px -15px var(--grayish-blue);
+}
+
+.image{
+  width: 100px;
+  height: 100px;
+}
+
 .count-card h3 {
   font-size: 19px;
   margin-bottom: 10px;
 }
 
+/*need to finish this*/
 .count-card p {
+  align-items: center;
   font-size: 13px;
   font-weight: 200;
   width: 32ch;
@@ -41,6 +60,33 @@
   color: var(--grayish-blue);
 }
 
+.seo-container{
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto 10px auto;
+  
+}
+
+.seo-container p{
+  font-size: 15px;
+  font-weight: 100;
+  text-decoration: none;
+  text-align: center;
+  margin: 15px;
+}
+
+.book-description{
+  justify-content: center;
+  flex-direction: row;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  text-decoration: none;
+  text-align: justify;
+  padding: 5px;
+  margin-left: 120px;
+}
 .buttons{
   flex-direction: row;
   align-items: center;
@@ -130,3 +176,29 @@
 
 }
   
+
+p .card-text{
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+
+/* for the error page*/
+.link-home a{
+  text-decoration: none;
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  border-radius: 25px;
+  background-color: #e55039aa;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: 0.4s ease-in;}
+
+  .link-home a:hover{
+    background-color: #e55039;
+    text-transform: lowercase;
+}

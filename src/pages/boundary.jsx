@@ -1,5 +1,5 @@
 import React from "react";
-import MyCounter from "./MyCounter";
+//import MyCounter from "./MyCounter";
 //import MyErrorBoundary from './MyErrorBoundary';
 
 /*class Boundary extends React.Component {
@@ -30,13 +30,28 @@ import { ErrorBoundary } from "react-error-boundary";
 const ErrorFallback = ({ error, resetErrorBoundary }) => {
   return (
     <div role="alert">
-      <h1> ERROR </h1>
-      <p>Something went wrong! </p>
-      <p> Go back to Home Page </p>
-      <Link to="/"> Home Page </Link>
-      <p>Reason for Error </p>
-      <pre>{error.message}</pre>
-      <button onClick={resetErrorBoundary}>Try again</button>
+      <div className="app">
+        <div className="page-design">
+        <h1> ERROR </h1>
+          <div className="counter-card">
+          <h3>Something went wrong! Go back to Home Page </h3>
+          <br></br>
+          <div className="link-home">
+          <Link to="/"> Home Page </Link>
+          <br></br>
+          <br></br>
+          </div>
+          <p>Reason for Error </p>
+          <br></br>
+          <pre>{error.message}</pre>
+          
+          <br></br>
+          <button className="button-3" onClick={resetErrorBoundary}>Try again</button>
+          </div>
+          
+          
+        </div>
+      </div>
     </div>
   );
 };

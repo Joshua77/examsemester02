@@ -16,14 +16,27 @@ function Home() {
     setCount(count - 1);
   };
 
+  const handleChange = (event) => {
+    setCount(parseInt(event.target.value))
+    console.log("value is:", event.target.value);
+  };
+
   return (
     <>
-      <h2>Test this Page for UseEffect Counter </h2>
       <div className="app">
-     
-        
         <div className="page-design">
           <div class="count-card">
+            <div>
+              <input
+                type="text"
+                id="message"
+                name="message"
+                onChange={handleChange}
+                value={count}
+              />
+
+              <h3>Count: {count}</h3>
+            </div>
             <h2>Count (UseEffect):</h2>
             <h3>{count}</h3>
             <div class="buttons">
