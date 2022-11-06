@@ -1,12 +1,13 @@
 import React from "react";
 import { useState } from "react";
+import { useErrorHandler } from "react-error-boundary";
 
 const MAX_COUNT_ALLOWED = 4
 
-export const  ClickCounter = () =>{
+export const ClickCounter = () => {
     const [count, setCount] = useState(0)
-    //const handleError = useErrorHandler()
-}
+    const handleError = useErrorHandler()
+
 
 const handleClick = ()=>{
     try{
@@ -22,9 +23,7 @@ const handleClick = ()=>{
 
     return(
         <div>
-            <button onClick={handleClick}>
-                Counter: {count}
-            </button>
+            <button onClick={handleClick}> Counter: {count} </button>
         </div>
     )
-}
+}};

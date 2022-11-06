@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 //import { Links, Route, Routes } from "react-router-dom";
 //import { BrowserRouter, Route, Link } from "react-router-dom";
 import "./App.css";
+//import { ClickCounter } from "./pages/clickcounter";
 //import { ErrorBoundary } from "react-error-boundary";
-//import { ClickCounter } from './Components/ClickCounter'
+
 //import Reducer from "./Components/usereducer.js";
 // import { ErrorBoundary } from "./Components/error.js";
 //import { NotFound } from "./Components/page404.js";
@@ -56,22 +57,11 @@ function PageNotFound (){
 */
 
 // CODE SECTION FOR THE ROOT COMPONENT
-const MAX_COUNT_ALLOWED = 4
+/*const MAX_COUNT_ALLOWED = 4
 export const  ClickCounter = () =>{
   const [counter, setCounter] = useState(0);
   //const handleError = useErrorHandler()
 }
-
-export default function App() {
-  const [count, setCount] = useState(0);
-
-  let incrementCount = () => {
-    setCount(count + 1);
-  };
-
-  let decrementCount = () => {
-    setCount(count - 1);
-  };
 
   const handleClick = ()=>{
     try{
@@ -84,6 +74,19 @@ export default function App() {
         handleError(e)
         //console.log("clickCounter error", e)
     }}
+*/
+export default function App() {
+  const [count, setCount] = useState(0);
+
+  let incrementCount = () => {
+    setCount(count + 1);
+  };
+
+  let decrementCount = () => {
+    setCount(count - 1);
+  };
+
+
 
   return (
     <div className="app">
@@ -91,6 +94,7 @@ export default function App() {
         <div class="count-card">
           <h2>Count (UseEffect):</h2>
           <h3>{count}</h3>
+          
           <div class="buttons">
             <button className="button-3" onClick={incrementCount}>
               {" "}
@@ -105,18 +109,10 @@ export default function App() {
               Reset{" "}
             </button>
 
-            <div>
-              <p>Click Button to Increase Number</p>
-              <p> Error Occurs when count reaches 4!</p>
-              <button onClick={handleClick}>
-                Counter: {counter}
-              </button>
-            </div>
 
 
           </div>
         </div>
       </div>
     </div>
-  );
-}
+  )};
