@@ -10,9 +10,7 @@ function Navbar() {
           <li>
             <Link to="/">Home</Link>
           </li>
-          <li>
-            <Link to="/Errorpage">Error Page</Link>
-          </li>
+          
           <li>
             <Link to="/Reducer"> Use Reducer </Link>
           </li>
@@ -26,3 +24,8 @@ function Navbar() {
 
 
 export default Navbar;
+
+
+//<li>
+//<Link to="/Errorpage">Error Page</Link>
+//</li>

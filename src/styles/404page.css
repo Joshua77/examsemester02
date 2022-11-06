@@ -1,4 +1,4 @@
-/*.body{
+.body{
     padding: 0px;
     margin: 0px;
     font-family: "montserrat", sans-serif;
@@ -19,7 +19,9 @@
 
 .not-found h1{
     font-size: 160px;
+    color: white;
     font-weight: 900;
+    padding: 20px;
     letter-spacing: 20px;
     background: url('background.jpg') center no-repeat;
     --webkit-text-fill-color: transparent;
@@ -42,4 +44,9 @@
 .not-found a:hover{
     background-color: #e55039;
     text-transform: lowercase;
-}*/
+}
+
+.not-found p{
+    font-size: 24px;
+    font-weight: 400;
+}

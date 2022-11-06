@@ -6,7 +6,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import PageNotFound from "./pages/Page404";
 import UseReducer from "./pages/Reducer";
-import ErrorPage from "./pages/Errorpage";
+//import ErrorPage from "./Components/Errorpage";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -17,12 +17,14 @@ root.render(
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="Reducer" element={<UseReducer />} />
-          <Route path="Errorpage" element={<ErrorPage />} />
+          
           <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
 );
+
+//<Route path="Errorpage" element={<ErrorPage />} />
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

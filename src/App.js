@@ -1,8 +1,9 @@
 import { useState } from "react";
-//import { Links, Route, Routes } from "react-router-dom";
-//import { BrowserRouter, Route, Link } from "react-router-dom";
-import "./App.css";
-//import { ClickCounter } from "./pages/clickcounter";
+//import { Links, Route, BrowserRoutes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css"
+import Home from "./pages/Home"
+import PageNotFound from "./pages/Page404"
 //import { ErrorBoundary } from "react-error-boundary";
 
 //import Reducer from "./Components/usereducer.js";
@@ -90,6 +91,12 @@ export default function App() {
 
   return (
     <div className="app">
+      <BrowserRouter>
+      <Route>
+        <Route exact path='/' component={Home} />
+        <Route path="*" component={PageNotFound} />
+        </Route>
+    </BrowserRouter>
       <div className="page-design">
         <div class="count-card">
           <h2>Count (UseEffect):</h2>

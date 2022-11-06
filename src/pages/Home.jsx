@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import { ErrorBoundary } from "react-error-boundary";
-import { useErrorHandler } from "react-error-boundary";
-//import { ErrorPage } from './Errorpage'
-import { ClickCounter } from "./clickcounter";
-import { Fallback } from "./Fallback.jsx";
+//import { ErrorBoundary } from "react-error-boundary";
+//import { useErrorHandler } from "react-error-boundary";
+//import  ErrorPage  from '../Components/Errorpage'
+//import  ClickCounter  from "../Components/clickcounter";
+//import  Fallback from "../Components/Fallback.jsx";
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -19,7 +19,7 @@ function Home() {
 
   return (
     <>
-      <h1>this is the homepage</h1>
+      <h2>Test this Page for SEO and UseEffect Counter </h2>
       <div className="app">
         <div className="page-design">
             

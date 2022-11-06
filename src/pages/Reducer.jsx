@@ -43,7 +43,9 @@ export default function Reduce() {
   }
 
   return (
+    
     <div className="app">
+      
       <div className="page-design">
         <div class="count-card">
           <h2>Count (Using UseReducer):</h2>
