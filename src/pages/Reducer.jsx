@@ -5,6 +5,7 @@ const ACTIONS = {
   INCREMENT: "incrementCount",
   DECREMENT: "decrementCount",
   RESET: "resetCount",
+  SET: "setCount"
 };
 
 function reducer(state, action) {
@@ -42,7 +43,7 @@ export default function Reduce() {
   }
 
   const handleChange = (e) => {
-  dispatch({ type: "SET", payload: parseInt(e.target.value) })}
+  dispatch({ type: 'SET', payload: parseInt(e.target.value) })}
   
 
   return (
@@ -52,7 +53,7 @@ export default function Reduce() {
         <div class="count-card">
         <div>
               <input
-                type="text"
+                type="number"
                 id="message"
                 name="message"
                 //onChange={handleChange}
