@@ -10,11 +10,11 @@ Hosted on Vercel
 ## Please find the link to my Assignment 1 and 2 codes transferred from Codesandbox to Github
 # Assignment 1
 <link> https://github.com/Joshua77/altscool-calculator-app-ass1 </link>
-# Link submitted to form (code sandbox)
+## Link submitted to form (code sandbox)
 <link> https://o3tg39.csb.app/ </link>
 
 # Assignment 2
 <link> https://github.com/Joshua77/altschool-assignment02 </link>
-# Link submitted to form (code sandbox)
+## Link submitted to form (code sandbox)
 <link> https://3es8un.csb.app/ </link>
 
